@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import MeetupList from "../components/meetups/MeetupList";
 
 const dummy_meetup = [
@@ -19,6 +20,16 @@ const dummy_meetup = [
 
 const HomePage = () => {
   return <MeetupList meetups={dummy_meetup} />;
+=======
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+const HomePage = () => {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/meets");
+  }, []);
+  return <h1> Welcome</h1>;
+>>>>>>> 309f6b425d3ae08b6ce87cc94c2bc73136f8fc67
 };
 
 export default HomePage;

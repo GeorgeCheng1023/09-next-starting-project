@@ -7,7 +7,10 @@ function MeetupItem(props) {
   const showDetailHandler = () => {
     router.push("/meets/" + props.id);
   };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 309f6b425d3ae08b6ce87cc94c2bc73136f8fc67
   return (
     <li className={classes.item}>
       <Card>
