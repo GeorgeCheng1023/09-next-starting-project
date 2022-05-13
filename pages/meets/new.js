@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-// /meets/new
-import NewMeetupForm from "../../components/meetups/NewMeetupForm";
-const NewMeetPage = () => {
-  return (
-    <>
-      <NewMeetupForm />
-=======
 import NewMeetsupForm from "../../components/meetups/NewMeetupForm";
 
 const NewMeetsPage = (props) => {
@@ -24,13 +16,8 @@ const NewMeetsPage = (props) => {
   return (
     <>
       <NewMeetsupForm onAddMeetup={addMeetupHandler} />
->>>>>>> 309f6b425d3ae08b6ce87cc94c2bc73136f8fc67
     </>
   );
 };
 
-<<<<<<< HEAD
-export default NewMeetPage;
-=======
-export default NewMeetsupForm;
->>>>>>> 309f6b425d3ae08b6ce87cc94c2bc73136f8fc67
+export default NewMeetsPage;

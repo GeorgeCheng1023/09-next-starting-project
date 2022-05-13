@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // meets/:meetId
 import { Card, Button, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,13 +31,6 @@ const DetailPage = () => {
       </Row>
     </Container>
   );
-=======
-import { useRouter } from "next/router";
-
-const DetailPage = (props) => {
-  const router = useRouter();
-  return <h1>The DetailPage</h1>;
->>>>>>> 309f6b425d3ae08b6ce87cc94c2bc73136f8fc67
 };
 
 export default DetailPage;
