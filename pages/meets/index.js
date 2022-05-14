@@ -1,4 +1,5 @@
 import MeetupList from "../../components/meetups/MeetupList";
+import Head from "next/head";
 import { MongoClient } from "mongodb";
 const dummy_meets = [
   {
@@ -20,6 +21,9 @@ const dummy_meets = [
 const MeetupPage = (props) => {
   return (
     <>
+      <Head>
+        <title>Meetups | All</title>
+      </Head>
       <MeetupList meetups={props.meetups} />
     </>
   );

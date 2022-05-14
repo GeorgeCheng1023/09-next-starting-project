@@ -1,6 +1,6 @@
 import NewMeetupForm from "../../components/meetups/NewMeetupForm";
 import { useRouter } from "next/router";
-
+import Head from "next/head";
 const NewMeetsPage = (props) => {
   const router = useRouter();
   const addMeetupHandler = async (enteredMeetupData) => {
@@ -15,6 +15,9 @@ const NewMeetsPage = (props) => {
   };
   return (
     <>
+      <Head>
+        <title>Meetups | New</title>
+      </Head>
       <NewMeetupForm onAddMeetup={addMeetupHandler} />
     </>
   );
